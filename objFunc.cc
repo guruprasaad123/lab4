@@ -1,35 +1,35 @@
 #include<iostream>
 #include<math.h>
-#include "func.h"
-#include "Real1.h"
+#include "objFunc.h"
+//#include "Real.h"
 
 #define PI 3.14159265
 using namespace std;
 
 // 4√1−x2 
-double unitCircle(const double &x)
+double unitCircleOF(const double &x)
 {
     return 4.*sqrt(1.-x*x);
 }
 
 
-int line(const int &x)
+double lineOF(const double &x)
 {
 return (int) x;
 
 }
 //Optional Feature ... 
 
-
+/*
 Real rline(const Real &x)
 {
 return x;
 
 }
-
+*/
 
 // sin(15×x) + cos(3×x)
-double trigo(const double &x)
+double trigoOF(const double &x)
 {
     double param;
  //sin (param*PI/180);
@@ -44,7 +44,7 @@ double trigo(const double &x)
 }
 // x ifx < 0.5
 // 1−x ifx > 0.5 
-float biline(const float &x)
+double bilineOF(const double &x)
 {
 
 try{
